@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+body{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #3f3f3f;
+
+}
+
+.header {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header {
+    height: 50vh ;
+    background: url(../../../img/header.jpg) no-repeat center;
+    background-size: cover;
+}
+.header i{
+    
+    
+    text-align: center;
+    
+    color: #fff;
+    
+    font-size:60px;
+    
+}
+.title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 100px;
+}
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #9c27b0;
+    color: #fff;
+    text-decoration: none;
+    background: #9c27b0;
+    cursor:pointer;
+}
+.btn:hover {
+    background: none;
+
+}
+.btn-home{
+    display: flex;
+}
+.btn-home a{
+    margin: 0 10px;
+}
+.content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sau {
+    padding: 15%;
+    background: #1f1d1d;
+    height: 28rem;
+}
+.box-container{
+    display: flex;
+    justify-content: center;    
+    flex-wrap: wrap;
+    text-align: center;
+}
+.box-container .box{
+    height: 14rem;
+    width: 17rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5);
+    margin: 2rem;
+}
+.box-container .box i{
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #9c27b0;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.box-container .box h3 {
+    font-size: 20px;
+    color: #9c27b0;
+}
+
+.box-container .box p {
+    padding: 0 15px;
+    font-size: 16px;
+}
+.about {
+    padding: 5rem;
+    background: #171717;
+
+}
+.container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.estatua {
+    flex: 1;
+    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5);
+    
+}
+
+.text {
+    flex: 2;
+    
+}
+.price {
+    height: 10%;
+    
+    background: url(../../../img/estatua.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.contact {
+    padding-top: 20px;
+    background: #171717;
+    padding-bottom: 0;
+}
+.contenedor-slider
+{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 800px;
+    padding: 0px 40px;
+}
+
+.slider-izquierdo, .slider-derecho
+{
+    width: 5%;
+}
+
+.slider-izquierdo img, .slider-derecho img
+{
+   width: 100%;
+
+}
+
+.slider-screen
+{
+    width: 90%;
+}
+
+.slider-screen img
+{
+    width: 100%;
+}
+form {
+    
+    padding: 50px 50px;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5);
+    margin: 2rem;
+    
+    width: 340px;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+label {
+    color:#fff;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color:aliceblue;
+    border: 2px solid #fff;
+    color:#171717;
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder{
+    color: #101010;
+}
+
+.form-txt{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    text-align: center;
+
+}
+
+.form-txt a {
+    color:#9c27b0;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+
+  
+
+@media (max-width: 768px) {
+    .title{
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+    .sau{
+        height: 120vh;
+    }
+    .navbar{
+        display: none;
+    }
+}
